@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5A36"/>
+      <stop offset="100%" stop-color="#E23E3E"/>
+    </linearGradient>
+  </defs>
+  <rect width="40" height="40" rx="10" fill="url(#logoGrad)"/>
+  <!-- Cloche / Food Dome Icon -->
+  <path d="M20 10a1.75 1.75 0 0 1 1.732 1.5H23a1 1 0 0 1 1 1v.5a9 9 0 0 1 7 8.78V24a1 1 0 0 1-1 1H10a1 1 0 0 1-1-1v-2.22A9 9 0 0 1 16 13v-.5a1 1 0 0 1 1-1h1.268A1.75 1.75 0 0 1 20 10zm-9 13h18v-.22A7 7 0 0 0 22 16.08V15h-4v1.08A7 7 0 0 0 11 22.78V23z" fill="#FFFFFF"/>
+  <!-- Plate Base Line -->
+  <rect x="8" y="27" width="24" height="2.5" rx="1.25" fill="#FFFFFF"/>
+</svg>

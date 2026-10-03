@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MealMate — Good Food. Made Simple.</title>
+  <meta name="description" content="Discover delicious meals, explore exciting offers, and enjoy your favourites with MealMate. A responsive food ordering frontend project.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. GLOBAL NAVBAR
+       ======================================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg mm-navbar sticky-top">
+      <div class="container">
+        <!-- Brand Logo & Name -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.svg" alt="MealMate Logo" width="36" height="36">
+          <span>Meal<span class="mm-brand-accent">Mate</span></span>
+        </a>
+
+        <!-- Mobile Hamburger Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMealMate" aria-controls="navbarMealMate" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarMealMate">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="offers.html">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="nav-link mm-cart-link" href="cart.html">
+                <i class="bi bi-bag-fill text-danger"></i>
+                <span>Cart</span>
+                <span class="mm-cart-badge">3</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         2. HERO SECTION
+         ======================================================================== -->
+    <section class="mm-hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Hero Text Content -->
+          <div class="col-12 col-lg-6">
+            <span class="section-tag">
+              <i class="bi bi-fire me-1"></i> Quick &amp; Fresh Delivery
+            </span>
+            <h1 class="mm-hero-title">
+              Good Food.<br>
+              <span>Made Simple.</span>
+            </h1>
+            <p class="mm-hero-desc">
+              Discover delicious meals, explore exciting offers, and enjoy your favourites with MealMate. Freshly prepared, quickly delivered.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="menu.html" class="btn-mm-primary">
+                <span>Explore Menu</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="offers.html" class="btn-mm-outline">
+                <i class="bi bi-tag-fill text-danger"></i>
+                <span>View Offers</span>
+              </a>
+            </div>
+
+            <!-- Value Highlights -->
+            <div class="mm-hero-badges">
+              <div class="mm-hero-badge-item">
+                <i class="bi bi-star-fill text-warning"></i>
+                <span>4.8/5 Rating</span>
+              </div>
+              <div class="mm-hero-badge-item">
+                <i class="bi bi-clock-history"></i>
+                <span>30 Min Delivery</span>
+              </div>
+              <div class="mm-hero-badge-item">
+                <i class="bi bi-check-circle-fill text-success"></i>
+                <span>100% Hygienic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Image Showcase -->
+          <div class="col-12 col-lg-6">
+            <div class="mm-hero-img-wrap">
+              <img src="images/hero-food.jpg" alt="Delicious Food Platter by MealMate" class="img-fluid">
+              <div class="mm-hero-floating-card">
+                <div class="mm-hero-floating-icon">
+                  <i class="bi bi-award-fill"></i>
+                </div>
+                <div>
+                  <div class="fw-bold text-dark" style="font-size: 0.95rem;">Chef's Special Selection</div>
+                  <div class="text-muted" style="font-size: 0.82rem;">Over 10,000+ Happy Foodies</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. EXPLORE CATEGORIES
+         ======================================================================== -->
+    <section class="py-5 bg-white">
+      <div class="container py-lg-4">
+        <div class="text-center mb-5">
+          <span class="section-tag">Menu Categories</span>
+          <h2 class="section-title">Explore Categories</h2>
+          <p class="section-subtitle">Browse through our handpicked culinary categories designed for every craving.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Category 1: Breakfast -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="mm-category-card">
+              <div class="mm-category-img-wrap">
+                <img src="images/category-breakfast.jpg" alt="Breakfast Category">
+              </div>
+              <h3 class="mm-category-name">Breakfast</h3>
+              <a href="menu.html#breakfast" class="btn btn-sm btn-outline-danger w-100 rounded-pill">View Items</a>
+            </div>
+          </div>
+
+          <!-- Category 2: Burgers -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="mm-category-card">
+              <div class="mm-category-img-wrap">
+                <img src="images/category-burgers.jpg" alt="Burgers Category">
+              </div>
+              <h3 class="mm-category-name">Burgers</h3>
+              <a href="menu.html#burgers" class="btn btn-sm btn-outline-danger w-100 rounded-pill">View Items</a>
+            </div>
+          </div>
+
+          <!-- Category 3: Pizza -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="mm-category-card">
+              <div class="mm-category-img-wrap">
+                <img src="images/category-pizza.jpg" alt="Pizza Category">
+              </div>
+              <h3 class="mm-category-name">Pizza</h3>
+              <a href="menu.html#pizza" class="btn btn-sm btn-outline-danger w-100 rounded-pill">View Items</a>
+            </div>
+          </div>
+
+          <!-- Category 4: Meals -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="mm-category-card">
+              <div class="mm-category-img-wrap">
+                <img src="images/category-meals.jpg" alt="Meals Category">
+              </div>
+              <h3 class="mm-category-name">Meals</h3>
+              <a href="menu.html#meals" class="btn btn-sm btn-outline-danger w-100 rounded-pill">View Items</a>
+            </div>
+          </div>
+
+          <!-- Category 5: Desserts -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="mm-category-card">
+              <div class="mm-category-img-wrap">
+                <img src="images/category-desserts.jpg" alt="Desserts Category">
+              </div>
+              <h3 class="mm-category-name">Desserts</h3>
+              <a href="menu.html#desserts" class="btn btn-sm btn-outline-danger w-100 rounded-pill">View Items</a>
+            </div>
+          </div>
+
+          <!-- Category 6: Beverages -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="mm-category-card">
+              <div class="mm-category-img-wrap">
+                <img src="images/category-beverages.jpg" alt="Beverages Category">
+              </div>
+              <h3 class="mm-category-name">Beverages</h3>
+              <a href="menu.html#beverages" class="btn btn-sm btn-outline-danger w-100 rounded-pill">View Items</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. POPULAR CHOICES
+         ======================================================================== -->
+    <section class="py-5" style="background-color: var(--mm-light);">
+      <div class="container py-lg-4">
+        <div class="text-center mb-5">
+          <span class="section-tag">Trending Dishes</span>
+          <h2 class="section-title">Popular Choices</h2>
+          <p class="section-subtitle">Our customers' absolute favourites, made fresh on order with signature spices.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Food Card 1: Classic Burger -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="mm-food-card">
+              <div class="mm-food-img-wrap">
+                <img src="images/classic-burger.jpg" alt="Classic Burger">
+                <div class="mm-food-rating-badge">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4.8</span>
+                </div>
+              </div>
+              <div class="mm-food-body">
+                <h3 class="mm-food-title">Classic Burger</h3>
+                <p class="mm-food-desc">Crispy golden patty, farm-fresh lettuce, ripe tomatoes, and signature house sauce on toasted brioche.</p>
+                <div class="mm-food-footer">
+                  <span class="mm-food-price">₹149</span>
+                  <a href="food-details.html" class="btn-mm-primary btn-mm-sm">View Details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Food Card 2: Margherita Pizza -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="mm-food-card">
+              <div class="mm-food-img-wrap">
+                <img src="images/margherita-pizza.jpg" alt="Margherita Pizza">
+                <div class="mm-food-rating-badge">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4.9</span>
+                </div>
+              </div>
+              <div class="mm-food-body">
+                <h3 class="mm-food-title">Margherita Pizza</h3>
+                <p class="mm-food-desc">Stone-baked crust loaded with Italian san marzano tomato sauce, fresh buffalo mozzarella, and fragrant basil.</p>
+                <div class="mm-food-footer">
+                  <span class="mm-food-price">₹199</span>
+                  <a href="food-details.html" class="btn-mm-primary btn-mm-sm">View Details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Food Card 3: Chicken Biryani -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="mm-food-card">
+              <div class="mm-food-img-wrap">
+                <img src="images/chicken-biryani.jpg" alt="Chicken Biryani">
+                <div class="mm-food-rating-badge">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4.9</span>
+                </div>
+              </div>
+              <div class="mm-food-body">
+                <h3 class="mm-food-title">Chicken Biryani</h3>
+                <p class="mm-food-desc">Fragrant long-grain basmati rice dum-cooked with tender marinated chicken and royal aromatic spices.</p>
+                <div class="mm-food-footer">
+                  <span class="mm-food-price">₹249</span>
+                  <a href="food-details.html" class="btn-mm-primary btn-mm-sm">View Details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Food Card 4: Creamy Pasta -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="mm-food-card">
+              <div class="mm-food-img-wrap">
+                <img src="images/creamy-pasta.jpg" alt="Creamy Pasta">
+                <div class="mm-food-rating-badge">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4.7</span>
+                </div>
+              </div>
+              <div class="mm-food-body">
+                <h3 class="mm-food-title">Creamy Pasta</h3>
+                <p class="mm-food-desc">Al dente penne pasta bathed in a velvety garlic Alfredo cream sauce, infused with parmesan and herbs.</p>
+                <div class="mm-food-footer">
+                  <span class="mm-food-price">₹179</span>
+                  <a href="food-details.html" class="btn-mm-primary btn-mm-sm">View Details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Food Card 5: Masala Dosa -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="mm-food-card">
+              <div class="mm-food-img-wrap">
+                <img src="images/masala-dosa.jpg" alt="Masala Dosa">
+                <div class="mm-food-rating-badge">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4.8</span>
+                </div>
+              </div>
+              <div class="mm-food-body">
+                <h3 class="mm-food-title">Masala Dosa</h3>
+                <p class="mm-food-desc">Crisp golden fermented crepe filled with seasoned potato bhaji, paired with fresh coconut chutney and sambar.</p>
+                <div class="mm-food-footer">
+                  <span class="mm-food-price">₹89</span>
+                  <a href="food-details.html" class="btn-mm-primary btn-mm-sm">View Details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Food Card 6: Chocolate Brownie -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="mm-food-card">
+              <div class="mm-food-img-wrap">
+                <img src="images/chocolate-brownie.jpg" alt="Chocolate Brownie">
+                <div class="mm-food-rating-badge">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4.9</span>
+                </div>
+              </div>
+              <div class="mm-food-body">
+                <h3 class="mm-food-title">Chocolate Brownie</h3>
+                <p class="mm-food-desc">Warm, rich dark chocolate fudge brownie loaded with roasted walnuts and silky melted ganache.</p>
+                <div class="mm-food-footer">
+                  <span class="mm-food-price">₹119</span>
+                  <a href="food-details.html" class="btn-mm-primary btn-mm-sm">View Details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. WHY MEALMATE?
+         ======================================================================== -->
+    <section class="py-5 bg-white">
+      <div class="container py-lg-4">
+        <div class="text-center mb-5">
+          <span class="section-tag">The MealMate Promise</span>
+          <h2 class="section-title">Why MealMate?</h2>
+          <p class="section-subtitle">We believe great food should be accessible, high-quality, and effortless to enjoy.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Feature 1: Fresh Food -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="mm-feature-card">
+              <div class="mm-feature-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h3 class="mm-feature-title">Fresh Food</h3>
+              <p class="mm-feature-desc">Prepared fresh daily with handpicked local ingredients and premium culinary standards.</p>
+            </div>
+          </div>
+
+          <!-- Feature 2: Affordable Prices -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="mm-feature-card">
+              <div class="mm-feature-icon">
+                <i class="bi bi-tag-fill"></i>
+              </div>
+              <h3 class="mm-feature-title">Affordable Prices</h3>
+              <p class="mm-feature-desc">Delicious, restaurant-quality dishes priced fairly so you can enjoy everyday cravings guilt-free.</p>
+            </div>
+          </div>
+
+          <!-- Feature 3: Easy Ordering -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="mm-feature-card">
+              <div class="mm-feature-icon">
+                <i class="bi bi-lightning-charge-fill"></i>
+              </div>
+              <h3 class="mm-feature-title">Easy Ordering</h3>
+              <p class="mm-feature-desc">Clean, intuitive browsing interface that gets your favourite meals ordered in just a few taps.</p>
+            </div>
+          </div>
+
+          <!-- Feature 4: Wide Variety -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="mm-feature-card">
+              <div class="mm-feature-icon">
+                <i class="bi bi-grid-fill"></i>
+              </div>
+              <h3 class="mm-feature-title">Wide Variety</h3>
+              <p class="mm-feature-desc">From healthy morning breakfasts to late-night pizzas and desserts, explore varied cuisines.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. TODAY'S OFFERS
+         ======================================================================== -->
+    <section class="py-5" style="background-color: var(--mm-light);">
+      <div class="container py-lg-4">
+        <div class="text-center mb-5">
+          <span class="section-tag">Limited Time</span>
+          <h2 class="section-title">Today's Offers</h2>
+          <p class="section-subtitle">Take advantage of exclusive discounts crafted for your next meal.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Offer 1 -->
+          <div class="col-12 col-md-4">
+            <div class="mm-offer-card">
+              <span class="mm-offer-badge">Welcome Deal</span>
+              <div class="mm-offer-discount">20% OFF</div>
+              <h3 class="mm-offer-title">First Order</h3>
+              <p class="mm-offer-desc">Enjoy a flat 20% discount on your very first food order placed with MealMate.</p>
+              <div class="mm-coupon-box">
+                <span class="mm-coupon-label">Coupon Code</span>
+                <span>FIRST20</span>
+              </div>
+              <a href="offers.html" class="btn-mm-primary w-100">Claim Offer</a>
+            </div>
+          </div>
+
+          <!-- Offer 2 -->
+          <div class="col-12 col-md-4">
+            <div class="mm-offer-card">
+              <span class="mm-offer-badge">Weekend Special</span>
+              <div class="mm-offer-discount">Flat ₹100 OFF</div>
+              <h3 class="mm-offer-title">Weekend Feasts</h3>
+              <p class="mm-offer-desc">Save ₹100 instantly on all family orders above ₹499 this Saturday &amp; Sunday.</p>
+              <div class="mm-coupon-box">
+                <span class="mm-coupon-label">Coupon Code</span>
+                <span>WEEKEND100</span>
+              </div>
+              <a href="offers.html" class="btn-mm-primary w-100">Claim Offer</a>
+            </div>
+          </div>
+
+          <!-- Offer 3 -->
+          <div class="col-12 col-md-4">
+            <div class="mm-offer-card">
+              <span class="mm-offer-badge">Bestseller Deal</span>
+              <div class="mm-offer-discount">Buy 1 Get 1</div>
+              <h3 class="mm-offer-title">Selected Items</h3>
+              <p class="mm-offer-desc">Order any medium pizza or gourmet burger and receive a second one completely free.</p>
+              <div class="mm-coupon-box">
+                <span class="mm-coupon-label">Coupon Code</span>
+                <span>BOGO</span>
+              </div>
+              <a href="offers.html" class="btn-mm-primary w-100">Claim Offer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. FINAL CTA
+         ======================================================================== -->
+    <section class="py-5 bg-white">
+      <div class="container py-lg-3">
+        <div class="mm-cta-banner">
+          <div class="position-relative" style="z-index: 2;">
+            <h2>Hungry? Let's find something delicious.</h2>
+            <p>Browse our complete menu of chef-crafted delicacies ready to be delivered hot and fresh to your doorstep.</p>
+            <a href="menu.html" class="btn-mm-primary px-4 py-3 fs-6">
+              <span>Explore Menu</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       8. GLOBAL FOOTER
+       ======================================================================== -->
+  <footer class="mm-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <!-- Brand Info -->
+        <div class="col-12 col-lg-4">
+          <a class="mm-footer-brand" href="index.html">
+            <img src="images/logo.svg" alt="MealMate Logo" width="34" height="34">
+            <span>Meal<span class="mm-brand-accent">Mate</span></span>
+          </a>
+          <p class="text-white-50 fw-semibold mb-2">Good Food. Made Simple.</p>
+          <p class="small text-white-50 mb-4" style="max-width: 320px;">
+            Discover delicious meals, explore exciting offers, and enjoy your favourites with MealMate. Freshly prepared, quickly delivered.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="mm-footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">View Cart</a></li>
+          </ul>
+        </div>
+
+        <!-- Food Categories -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Categories</h5>
+          <ul class="mm-footer-links">
+            <li><a href="menu.html#breakfast">Breakfast</a></li>
+            <li><a href="menu.html#burgers">Burgers</a></li>
+            <li><a href="menu.html#pizza">Pizza</a></li>
+            <li><a href="menu.html#meals">Meals</a></li>
+            <li><a href="menu.html#desserts">Desserts</a></li>
+            <li><a href="menu.html#beverages">Beverages</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h5>Contact</h5>
+          <div class="mm-footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>hello@mealmate.com</span>
+          </div>
+          <div class="mm-footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="mm-footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>124 Food Street, Indiranagar, Bengaluru, India</span>
+          </div>
+          <div class="mm-footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Mon – Sun: 10:00 AM – 11:30 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="mm-footer-bottom">
+        <div>&copy; 2026 MealMate. All rights reserved.</div>
+        <div class="text-white-50 small">
+          Frontend Portfolio Project &bull; Built with HTML5, CSS3 &amp; Bootstrap 5
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

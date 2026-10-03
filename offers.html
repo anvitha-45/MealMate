@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Offers &amp; Deals — MealMate | Good Food. Made Simple.</title>
+  <meta name="description" content="Discover exclusive deals, discounts, and promo codes on MealMate. Save on burgers, pizzas, biryani, and combos.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. GLOBAL NAVBAR
+       ======================================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg mm-navbar sticky-top">
+      <div class="container">
+        <!-- Brand Logo & Name -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.svg" alt="MealMate Logo" width="36" height="36">
+          <span>Meal<span class="mm-brand-accent">Mate</span></span>
+        </a>
+
+        <!-- Mobile Hamburger Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMealMate" aria-controls="navbarMealMate" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarMealMate">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="offers.html">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="nav-link mm-cart-link" href="cart.html">
+                <i class="bi bi-bag-fill text-danger"></i>
+                <span>Cart</span>
+                <span class="mm-cart-badge">3</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         2. PAGE HEADER BANNER
+         ======================================================================== -->
+    <section class="py-5 bg-white border-bottom">
+      <div class="container py-lg-3 text-center">
+        <span class="section-tag">
+          <i class="bi bi-tags-fill me-1"></i> Exclusive Discounts
+        </span>
+        <h1 class="section-title">Special Offers</h1>
+        <p class="section-subtitle">Enjoy delicious meals with exciting deals. Apply promo codes to save big on your orders.</p>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. OFFERS GRID
+         ======================================================================== -->
+    <section class="py-5" style="background-color: var(--mm-light);">
+      <div class="container py-lg-4">
+        <div class="row g-4">
+          <!-- Offer Card 1: FIRST20 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="mm-offer-card">
+              <span class="mm-offer-badge">Welcome Bonus</span>
+              <div class="mm-offer-discount">20% OFF</div>
+              <h3 class="mm-offer-title">First Order</h3>
+              <p class="mm-offer-desc">
+                Welcome to MealMate! Enjoy 20% off on your first order. Minimum bill ₹200. Max discount ₹100.
+              </p>
+              <div class="mm-coupon-box">
+                <span class="mm-coupon-label">Coupon</span>
+                <span>FIRST20</span>
+              </div>
+              <a href="menu.html" class="btn-mm-primary w-100">Order Now</a>
+            </div>
+          </div>
+
+          <!-- Offer Card 2: WEEKEND100 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="mm-offer-card">
+              <span class="mm-offer-badge">Weekend Feast</span>
+              <div class="mm-offer-discount">₹100 OFF</div>
+              <h3 class="mm-offer-title">Weekend Special</h3>
+              <p class="mm-offer-desc">
+                Celebrate Saturday and Sunday with flat ₹100 off on delicious family feasts above ₹499.
+              </p>
+              <div class="mm-coupon-box">
+                <span class="mm-coupon-label">Coupon</span>
+                <span>WEEKEND100</span>
+              </div>
+              <a href="menu.html" class="btn-mm-primary w-100">Order Now</a>
+            </div>
+          </div>
+
+          <!-- Offer Card 3: COMBO50 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="mm-offer-card">
+              <span class="mm-offer-badge">Combo Saver</span>
+              <div class="mm-offer-discount">₹50 OFF</div>
+              <h3 class="mm-offer-title">Special Combo Offer</h3>
+              <p class="mm-offer-desc">
+                Save ₹50 when you bundle any Indian Meal or Biryani with a refreshing chilled beverage.
+              </p>
+              <div class="mm-coupon-box">
+                <span class="mm-coupon-label">Coupon</span>
+                <span>COMBO50</span>
+              </div>
+              <a href="menu.html" class="btn-mm-primary w-100">Order Now</a>
+            </div>
+          </div>
+
+          <!-- Offer Card 4: BOGO -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="mm-offer-card">
+              <span class="mm-offer-badge">Mega Double</span>
+              <div class="mm-offer-discount">Buy 1 Get 1</div>
+              <h3 class="mm-offer-title">Selected Items</h3>
+              <p class="mm-offer-desc">
+                Buy any Medium Margherita or Farmhouse Pizza and get another medium pizza totally free.
+              </p>
+              <div class="mm-coupon-box">
+                <span class="mm-coupon-label">Coupon</span>
+                <span>BOGO</span>
+              </div>
+              <a href="menu.html" class="btn-mm-primary w-100">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. HOW TO REDEEM SECTION
+         ======================================================================== -->
+    <section class="py-5 bg-white">
+      <div class="container py-lg-4">
+        <div class="text-center mb-5">
+          <span class="section-tag">Quick Guide</span>
+          <h2 class="section-title">How To Redeem Offers</h2>
+          <p class="section-subtitle">Three easy steps to apply your discount codes and enjoy great savings.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-4 text-center">
+            <div class="p-4 border rounded-4 h-100">
+              <div class="mm-feature-icon mx-auto mb-3">
+                <i class="bi bi-cart-check"></i>
+              </div>
+              <h4 class="fw-bold mb-2">1. Choose Your Dishes</h4>
+              <p class="text-muted small mb-0">Browse through our menu categories and pick your favorite meals.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 text-center">
+            <div class="p-4 border rounded-4 h-100">
+              <div class="mm-feature-icon mx-auto mb-3">
+                <i class="bi bi-ticket-perforated"></i>
+              </div>
+              <h4 class="fw-bold mb-2">2. Enter Coupon Code</h4>
+              <p class="text-muted small mb-0">Copy any active coupon code above and paste it at checkout.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 text-center">
+            <div class="p-4 border rounded-4 h-100">
+              <div class="mm-feature-icon mx-auto mb-3">
+                <i class="bi bi-emoji-smile"></i>
+              </div>
+              <h4 class="fw-bold mb-2">3. Enjoy Delicious Savings</h4>
+              <p class="text-muted small mb-0">Watch your order total drop and relish hot food delivered quickly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. FINAL CTA
+         ======================================================================== -->
+    <section class="py-5" style="background-color: var(--mm-light);">
+      <div class="container py-lg-3">
+        <div class="mm-cta-banner">
+          <div class="position-relative" style="z-index: 2;">
+            <h2>Ready to satisfy your cravings?</h2>
+            <p>Explore our wide selection of appetizing meals, pizzas, burgers, and refreshing drinks.</p>
+            <a href="menu.html" class="btn-mm-primary px-4 py-3 fs-6">
+              <span>Explore Menu</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       6. GLOBAL FOOTER
+       ======================================================================== -->
+  <footer class="mm-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <!-- Brand Info -->
+        <div class="col-12 col-lg-4">
+          <a class="mm-footer-brand" href="index.html">
+            <img src="images/logo.svg" alt="MealMate Logo" width="34" height="34">
+            <span>Meal<span class="mm-brand-accent">Mate</span></span>
+          </a>
+          <p class="text-white-50 fw-semibold mb-2">Good Food. Made Simple.</p>
+          <p class="small text-white-50 mb-4" style="max-width: 320px;">
+            Discover delicious meals, explore exciting offers, and enjoy your favourites with MealMate. Freshly prepared, quickly delivered.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="mm-footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">View Cart</a></li>
+          </ul>
+        </div>
+
+        <!-- Food Categories -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Categories</h5>
+          <ul class="mm-footer-links">
+            <li><a href="menu.html#breakfast">Breakfast</a></li>
+            <li><a href="menu.html#burgers">Burgers</a></li>
+            <li><a href="menu.html#pizza">Pizza</a></li>
+            <li><a href="menu.html#meals">Meals</a></li>
+            <li><a href="menu.html#desserts">Desserts</a></li>
+            <li><a href="menu.html#beverages">Beverages</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h5>Contact</h5>
+          <div class="mm-footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>hello@mealmate.com</span>
+          </div>
+          <div class="mm-footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="mm-footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>124 Food Street, Indiranagar, Bengaluru, India</span>
+          </div>
+          <div class="mm-footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Mon – Sun: 10:00 AM – 11:30 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="mm-footer-bottom">
+        <div>&copy; 2026 MealMate. All rights reserved.</div>
+        <div class="text-white-50 small">
+          Frontend Portfolio Project &bull; Built with HTML5, CSS3 &amp; Bootstrap 5
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
