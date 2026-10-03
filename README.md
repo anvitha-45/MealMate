@@ -176,27 +176,6 @@ If extended into a full-stack production application, the following enhancements
 
 ---
 
-## 💼 Interview Talking Points
-
-When presenting this project in a frontend developer interview, consider highlighting:
-
-1. **Semantic HTML Architecture**:
-   - Organized document outline utilizing `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<footer>` rather than generic `<div>` soup.
-   - Descriptive `alt` attributes on all images and explicit `<label for="...">` associations with form inputs for web accessibility (WCAG compliance).
-
-2. **Modular CSS & Design Tokens**:
-   - Usage of CSS custom properties (`:root`) for colors, typography, border radii, and shadows, allowing consistent theme management and quick redesigns.
-   - Implementation of `scroll-margin-top` to account for sticky navbar offsets during internal anchor jumps.
-
-3. **Effective Use of Bootstrap 5**:
-   - Leveraged Bootstrap's 12-column flexbox grid (`col-12 col-md-6 col-lg-3`) for responsive breakpoints without writing hundreds of redundant media queries.
-   - Customized Bootstrap default components via `css/style.css` to build an original brand identity rather than a cookie-cutter template.
-
-4. **Honest Engineering Boundaries**:
-   - Transparently framed the application as a frontend UI/UX prototype, ensuring every button and navigation link functions cleanly while avoiding misleading fake backend claims.
-
----
-
 ## 📜 License & Attribution
 
 - Built for educational, resume, and portfolio demonstration purposes.
